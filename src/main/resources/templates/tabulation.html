@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Табуляция</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+   <table>
+     <thead>
+     <tr>
+       <th>X</th>
+       <th>Y</th>
+     </tr>
+     </thead>
+     <tbody>
+        <tr th:each="p : ${pts}">
+          <td th:text="${p.x}"></td>
+          <td th:text="${p.y}"></td>
+        </tr>
+     </tbody>
+   </table>
+</body>
+</html>
